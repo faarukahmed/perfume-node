@@ -114,7 +114,9 @@ run().catch(console.dir)
 app.get("/", (req, res) => {
   res.send("Running Perfume Server!");
 });
-
+app.get("/hero", (req, res) =>{
+  res.send("Heroku Running")
+})
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
